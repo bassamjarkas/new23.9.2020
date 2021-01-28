@@ -1,0 +1,72 @@
+<div class="container mt-4">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top img-thumbnail" src="{{user.photoUrl}}" alt="{{user.knowas}}">
+                <div class="card-body">
+                    <div>
+                        <strong>يقيم في :</strong>
+                        <p>{{user.country}},{{user.city}}</p>
+                    </div>
+                    <div>
+                        <strong>Alt:</strong>
+                        <p>{{user.age}}</p>
+                    </div>
+                    <div>
+                        <strong>Letzte Auftritt:</strong>
+                        <p>{{user.lastActive}}</p>
+                    </div>
+                    <div>
+                        <strong>Aboniert Seit:</strong>
+                        <p>{{user.created}}</p>
+                    </div>
+
+
+
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group d-flex " role="group">
+                        <button class="btn btn-primary w-100">Like</button>
+
+                        <button class="btn btn-success w-100 ">Send message</button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-sm-8">
+            <div class="tab-panel">
+                <tabset class="member-tabset ">
+                    <tab heading="Mein Name :{{user?.knowas}}">
+                        <h4>About me </h4>
+                        <p>{{user.introduction}}</p>
+                        <h4>Look about</h4>
+                        <p>{{user.lookingFor}}</p>
+                    </tab>
+                    <tab heading="my intersse">
+                        <h4>About me</h4>
+                        <p>{{user.intersstes}}</p>
+                    </tab>
+                    <tab heading="photos pic">
+                        <h4>Meine Pic</h4>
+                   
+                    </tab>
+                    <tab heading="Message">
+                        <h4>Message</h4>
+                        <p>erhaltene Message</p>
+                    </tab>
+                </tabset>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
